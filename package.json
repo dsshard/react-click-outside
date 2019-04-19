@@ -1,16 +1,15 @@
 {
-  "name": "@coxy/react-validator",
-  "version": "1.0.4",
-  "description": "React forms Validator",
+  "name": "@coxy/react-click-outside",
+  "version": "1.0.0",
+  "description": "React tracking click outside children",
   "main": "build/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dsshard/react-validator.git"
+    "url": "https://github.com/dsshard/react-click-outside.git"
   },
   "private": false,
   "keywords": [
-    "React",
-    "React Validator"
+    "React"
   ],
   "author": "dsshard",
   "scripts": {
