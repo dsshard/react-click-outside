@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class ReactClickOutside extends Component {
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-    onClose: PropTypes.func.isRequired,
-    visible: PropTypes.bool.isRequired,
-  }
-
+class ReactClickOutside extends Component {
   componentDidMount() {
     window.document.addEventListener('click', this.handleClickOutside, true);
     window.document.addEventListener('keydown', this.handleEsc, true);
   }
-
 
   componentWillUnmount() {
     window.document.removeEventListener('click', this.handleClickOutside, true);
@@ -55,8 +48,18 @@ export default class ReactClickOutside extends Component {
     if (!visible) {
       return null;
     }
-    return React.Children.map(children, child => React.cloneElement(child, {
+    return React.Children.map(children, (child) => React.cloneElement(child, {
       ref: (ref) => { this.node = ref; },
     }));
   }
 }
+
+
+ReactClickOutside.propTypes = {
+  children: PropTypes.node.isRequired,
+  onClose: PropTypes.func.isRequired,
+  visible: PropTypes.bool.isRequired,
+};
+
+
+export default ReactClickOutside;
