@@ -1,43 +1,47 @@
 {
   "name": "@coxy/react-click-outside",
   "version": "1.0.3",
-  "description": "React tracking click outside children",
-  "main": "build/index.js",
+  "description": "React tracking click outside children & useEffect fot toggle",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/dsshard/react-click-outside.git"
   },
   "private": false,
   "keywords": [
-    "React"
+    "React",
+    "click outside",
+    "typescript",
+    "ts",
+    "events",
+    "dom"
   ],
   "author": "dsshard",
   "scripts": {
-    "start": "NODE_ENV=development && webpack-cli --watch --mode development",
-    "build": "NODE_ENV=production && webpack-cli --mode production"
+    "start": "ts-node . --watch",
+    "build": "NODE_ENV=production tsc"
   },
   "license": "MIT",
   "peerDependencies": {
-    "react": ">=16.0.*",
-    "prop-types": ">=15.5.x"
+    "react": ">=17.0.*"
   },
   "dependencies": {
-    "react": ">=16.0.*",
-    "prop-types": ">=15.5.x"
+    "@coxy/utils": "1.0.8"
   },
   "devDependencies": {
-    "@babel/core": "7.5.5",
-    "@babel/plugin-proposal-class-properties": "7.5.5",
-    "@babel/preset-env": "7.5.5",
-    "@babel/preset-react": "7.0.0",
-    "babel-eslint": "10.0.2",
-    "babel-loader": "8.0.6",
-    "eslint": "6.1.0",
-    "eslint-config-airbnb": "18.0.1",
-    "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-react": "7.14.3",
-    "webpack": "4.39.2",
-    "webpack-cli": "3.3.7"
+    "@coxy/eslint-config": "1.0.5",
+    "@types/react": "^18.0.21",
+    "@typescript-eslint/eslint-plugin": "5.*",
+    "@typescript-eslint/parser": "5.*",
+    "eslint": "8.24.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-filename-rules": "1.2.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-n": "15.3.0",
+    "eslint-plugin-promise": "6.0.1",
+    "eslint-plugin-react": "7.31.8",
+    "ts-node": "10.9.1",
+    "typescript": "4.8.4"
   }
 }
