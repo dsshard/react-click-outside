@@ -1,6 +1,6 @@
 {
   "name": "@coxy/react-click-outside",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "React tracking click outside children & useEffect fot toggle",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
