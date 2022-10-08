@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "module": "ES2022",
+    "module": "CommonJS",
     "removeComments": true,
     "target": "ES2019",
     "sourceMap": false,
